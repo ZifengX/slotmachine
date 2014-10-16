@@ -3,3 +3,7 @@
     padding: 0;
     margin: 5px;
 }
+
+#myCanvas {
+    border:dotted;
+}

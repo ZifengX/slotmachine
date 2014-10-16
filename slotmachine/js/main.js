@@ -80,6 +80,7 @@ function showLossMessage() {
     playerMoney -= playerBet;
     $("div#winOrLose>p").text("You Lost!");
     resetFruitTally();
+    //jackpot += parseInt(playerBet);
 }
 
 /* Utility function to check if a value falls within a range of bounds */
