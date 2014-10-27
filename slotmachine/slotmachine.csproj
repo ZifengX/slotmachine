@@ -66,20 +66,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\main.css" />
-    <Content Include="img\bananas.png" />
-    <Content Include="img\bar.jpg" />
-    <Content Include="img\bell.png" />
-    <Content Include="img\blank.png" />
-    <Content Include="img\cherry.png" />
-    <Content Include="img\exit.png" />
-    <Content Include="img\grapes.png" />
-    <Content Include="img\orange.png" />
-    <Content Include="img\refesh.png" />
-    <Content Include="img\seven.png" />
-    <Content Include="img\slotmachine.png" />
-    <Content Include="img\spingreen.png" />
+    <Content Include="images\bananas.png" />
+    <Content Include="images\bar.jpg" />
+    <Content Include="images\bell.png" />
+    <Content Include="images\blank.png" />
+    <Content Include="images\cherry.png" />
+    <Content Include="images\exit.png" />
+    <Content Include="images\grapes.png" />
+    <Content Include="images\orange.png" />
+    <Content Include="images\refesh.png" />
+    <Content Include="images\seven.png" />
+    <Content Include="images\slotmachine.png" />
+    <Content Include="images\spingreen.png" />
     <Content Include="index.html" />
-    <Content Include="js\img.js" />
+    <Content Include="js\function.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\main.js" />
     <Content Include="Web.config" />
