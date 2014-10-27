@@ -1,22 +1,43 @@
-﻿window.onload = function () {
-    var theCanvas = document.getElementById('myCanvas');
-    var ctx = theCanvas.getContext("2d");
-
-    var slot = new Image();
-    slot.src = "images/slotmachine.png";
-    slot.onload = drawSlot;
-
-  function drawSlot() {
-      ctx.drawImage(slot, 0, 0, 380, 400);
-  }
-
-  var stage;
-  stage = new createjs.Stage("myCanvas");
-  function drawButtons() {
-      spinButton = new createjs.Bitmap("images/spingreen.png");
-      spinButton.x = 100;
-      stage.addChild(spinButton);
-      stage.update();
-
-  }
+﻿var stage;
+var spinButton, resetButton, exitButton;
+function init() {
+    stage = new createjs.Stage(document.getElementById('myCanvas'));
+    createjs.Ticker.addEventListener("tick", handleTick);
+    createjs.Ticker.setFPS(60);
+    start();
+    exitButton.addEventListener("click", exitClick);
 }
+
+
+function handleTick(e) {
+    stage.update();
+}
+
+
+function start() {
+    drawMachine();
+}
+
+function exitClick() {
+    window.close();
+}
+
+function drawMachine() {
+    //var imgPath = "images/bananas.png";
+    slotMachine = new createjs.Bitmap("images/slotmachine.png");
+    spinButton = new createjs.Bitmap("images/spingreen.png");   
+    spinButton.x = 300;
+    spinButton.y = 315;
+
+    resetButton = new createjs.Bitmap("images/refresh.png");
+    resetButton.x = 40;
+    resetButton.y = 13;
+
+    exitButton = new createjs.Bitmap("images/exit.png");
+    exitButton.x = 310;
+    exitButton.y = 13;
+
+    stage.addChild(slotMachine,spinButton,resetButton,exitButton);
+    stage.update();
+}
+

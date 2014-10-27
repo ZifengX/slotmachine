@@ -9,11 +9,15 @@
     <script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
 </head>
 <body>
-    <canvas height="403" width="384" id="myCanvas">
-        
-    </canvas>
     <div>
         <h1>Slot Machine</h1>
+    </div>
+    <canvas height="385" width="405" id="myCanvas">
+        Your browser does not support the canvas element.
+    </canvas>
+
+
+    <div>       
         <div>
             <h2>Player Statistics</h2>
             <hr />
@@ -36,7 +40,7 @@
         </div>
 
 
-        <button id="spinButton" style="background:url(img/spingreen.png);">spin!</button>
+        <button>spin!</button>
     </div>
 
     <div id="result">
@@ -54,6 +58,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/function.js"></script>
-    <script></script>
+    <script>init();</script>
 </body>
 </html>

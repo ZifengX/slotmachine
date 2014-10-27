@@ -74,7 +74,7 @@
     <Content Include="images\exit.png" />
     <Content Include="images\grapes.png" />
     <Content Include="images\orange.png" />
-    <Content Include="images\refesh.png" />
+    <Content Include="images\refresh.png" />
     <Content Include="images\seven.png" />
     <Content Include="images\slotmachine.png" />
     <Content Include="images\spingreen.png" />
@@ -82,6 +82,7 @@
     <Content Include="js\function.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\main.js" />
+    <Content Include="js\test.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
