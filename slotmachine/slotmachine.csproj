@@ -66,6 +66,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\main.css" />
+    <Content Include="img\bananas.png" />
+    <Content Include="img\bar.jpg" />
+    <Content Include="img\bell.png" />
+    <Content Include="img\blank.png" />
+    <Content Include="img\cherry.png" />
+    <Content Include="img\exit.png" />
+    <Content Include="img\grapes.png" />
+    <Content Include="img\orange.png" />
+    <Content Include="img\refesh.png" />
+    <Content Include="img\seven.png" />
     <Content Include="img\slotmachine.png" />
     <Content Include="img\spingreen.png" />
     <Content Include="index.html" />
