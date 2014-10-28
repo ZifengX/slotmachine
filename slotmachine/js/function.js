@@ -10,7 +10,8 @@ var bars = 0;
 var bells = 0;
 var sevens = 0;
 var blanks = 0;
-//onload activity
+
+//activate when browser loads
 function init() {
     stage = new createjs.Stage(document.getElementById('myCanvas'));
     createjs.Ticker.addEventListener("tick", handleTick);
@@ -29,7 +30,7 @@ function handleTick(e) {
     stage.update();
 }
 
-
+//load methods when the window loads
 function start() {
     drawMachine();
     defaultSymbols();
@@ -50,6 +51,7 @@ function exitClick() {
     }
     
 }
+
 /* Utility function to reset the player stats */
 function resetAll() {
     playerMoney = 1000;
@@ -57,6 +59,7 @@ function resetAll() {
     jackpot = 5000;
     playerBet = 0;
 }
+
 /* Check to see if the player won the jackpot */
 function checkJackPot() {
     /* compare two random values */
@@ -68,6 +71,7 @@ function checkJackPot() {
         jackpot = 1000;
     }
 }
+
 //click reset button to reset the machine
 function resetClick() {
     if (confirm("Do you want to reset the game?") == true) {
@@ -199,6 +203,7 @@ function drawMachine() {
     stage.update();
 }
 
+//show player stats
 function playerStats() {
     //jackpot 
     text1 = new createjs.Text(jackpot, "25px Arial", "#ff7700");
@@ -341,6 +346,7 @@ function determineWinnings() {
     }
 
 }
+
 //draw the default symbols
 function defaultSymbols() {
     
@@ -358,6 +364,7 @@ function defaultSymbols() {
     stage.addChild(grape1, grape2, grape3);
     stage.update();
 }
+
 //load images
 function loadImages() {
     stage.removeChild(grape1, grape2, grape3);
