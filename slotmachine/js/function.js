@@ -42,6 +42,9 @@ function exitClick() {
 
     if(confirm("Do you want to close the window?") == true)
     {
+       // window.close();
+       // window.open("about:blank", "_self").close()
+        window.open('', '_self', '');
         window.close();
         return true;
     }
