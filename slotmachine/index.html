@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Slot Machine</title>
+    <title>Dreacher Slots</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" media="screen">
     <!-- CSS Section -->
     <link href="css/main.css" rel="stylesheet" />
     <!--Createjs CDN-->
@@ -10,53 +11,15 @@
 </head>
 
 <body>
-
+    <div>
+        <h1>Slot Machine</h1> 
+    </div>
     <canvas height="385" width="405" id="myCanvas">
         Your browser does not support the canvas element.
     </canvas>
 
-
-    <div>     
-        <h1>Slot Machine</h1>  
-        <div>
-            <h2>Player Statistics</h2>
-            <hr />
-            <ul id="playerStats">
-                <li id="jackpot">Jackpot: 5000</li>
-                <li id="playerMoney">Player Money: 1000</li>
-                <li id="playerTurn">Turn: 0</li>
-                <li id="playerWins">Wins: 0</li>
-                <li id="playerLosses">Losses: 0</li>
-                <li id="playerWinRatio">Win Ratio: 0%</li>
-            </ul>
-            <hr />
-        </div>
-
-        <div id="betEntry">
-
-            <p>Place Your Bet Here</p>
-            <input id="playerBet" name="points" value="10">
-            <hr />
-        </div>
-
-
-        <button>spin!</button>
-    </div>
-
-    <div id="result">
-        <h2>Spin Result</h2>
-        <hr />
-        <p></p>
-    </div>
-    <hr />
-    <div id="winOrLose">
-        <p></p>
-    </div>
-
-
     <!-- JavaScript Section -->
     <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/function.js"></script>
     <script>init();</script>
 </body>
