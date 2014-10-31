@@ -144,7 +144,8 @@ function spinClick() {
     if (playerMoney == 0) {
         if (confirm("You ran out of Money! \nDo you want to play again?")) {
             resetAll();
-            showPlayerStats();
+            stage.removeChild(text1, text2, text3, text4);
+            playerStats();
         }
     }
     else if (playerBet == 0) {
